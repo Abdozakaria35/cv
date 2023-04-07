@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice botton with Glowing Animation</title>
+    <style>
+        .mic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+            color: #fff;
+
+            &::before,
+            &::after
+
+            {
+                content: "" ;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%).
+                border-radius: 100%;
+                z-index: 2;
+                box-shadow: 0 0 20px 20px #1c084f;
+            }
+
+            &::before
+
+            { width: 400%;
+              height: 400px;
+              background-color: #1a084e;
+
+            }
+
+            &::after
+
+            {
+                width: 400%;
+              height: 400px;
+              background-color: #2f1e5f;
+              animation: circle-size 0.8s linear infinite alternate;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mic">
+        <i class="mic-icon"></i>
+        <div class="mic-shadow"></div>
+    </div>
+</body>
+</html>
